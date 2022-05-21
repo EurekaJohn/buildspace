@@ -1,0 +1,51 @@
+Visual Studio Debuggable Package Manager PowerShell
+
+To install a package: Add-AppxPackage
+To list installed packages: Get-AppxPackage
+To enable debugging: Enable-AppxDebug <PackageFullName>
+More help: Get-Help AppxDebug
+
+PS C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\Remote Debugger\Appx> J:
+PS J:\> cd buildspace\stuff\my-wave-portal
+PS J:\buildspace\stuff\my-wave-portal> npm uninstall -g hardhat
+
+up to date, audited 1 package in 286ms
+
+found 0 vulnerabilities
+PS J:\buildspace\stuff\my-wave-portal> npx hardhat
+Error HH12: Trying to use a non-local installation of Hardhat, which is not supported.
+Please install Hardhat locally using npm or Yarn, and try again.
+
+For more info go to https://hardhat.org/HH12 or run Hardhat with --show-stack-traces
+PS J:\buildspace\stuff\my-wave-portal> npm install
+npm WARN deprecated ganache-core@2.13.2: ganache-core is now ganache; visit https://trfl.io/g7 for details
+npm WARN deprecated ganache-core@2.13.2: ganache-core is now ganache; visit https://trfl.io/g7 for details
+npm WARN deprecated testrpc@0.0.1: testrpc has been renamed to ganache-cli, please use this package from now on.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated @ensdomains/ens@0.4.5: Please use @ensdomains/ens-contracts
+npm WARN deprecated @ensdomains/resolver@0.2.4: Please use @ensdomains/ens-contracts
+
+added 1430 packages, and audited 1434 packages in 4m
+
+119 packages are looking for funding
+  run `npm fund` for details
+
+54 vulnerabilities (11 moderate, 42 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+PS J:\buildspace\stuff\my-wave-portal> npx hardhat
+Error HH12: Trying to use a non-local installation of Hardhat, which is not supported.
+Please install Hardhat locally using npm or Yarn, and try again.
+
+For more info go to https://hardhat.org/HH12 or run Hardhat with --show-stack-traces
+PS J:\buildspace\stuff\my-wave-portal>
